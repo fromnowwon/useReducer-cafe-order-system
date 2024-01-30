@@ -35,7 +35,7 @@ npm install
 npm start
 ```
 
-2. 웹 브라우저에서 http://localhost:3000으로 이동합니다.
+2. 웹 브라우저에서 `http://localhost:3000`으로 이동합니다.
 
 ## 기능
 - 주문 추가

@@ -1,8 +1,13 @@
 // reducer
+
+// Action Type 정의 (요구사항 종류)
+const ADD_ORDER = "ADD_ORDER";
+const CANCEL_ORDER = "CANCEL_ORDER";
+
 // 점원(현재주문목록, 요구사항)
 export const orderReducer = (state, action) => {
 	switch (action.type) {
-		case "ADD_ORDER":
+		case ADD_ORDER:
 			return [
 				...state,
 				{
@@ -12,7 +17,7 @@ export const orderReducer = (state, action) => {
 					price: action.price,
 				},
 			];
-		case "CANCEL_ORDER":
+		case CANCEL_ORDER:
 			return state.filter((order) => order.id !== action.id);
 		default:
 			return state;

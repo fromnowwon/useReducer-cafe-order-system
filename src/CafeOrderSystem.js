@@ -17,7 +17,7 @@ const CafeOrderSystem = () => {
 			newOrder.size.trim() !== "" &&
 			newOrder.price.trim() !== ""
 		) {
-			// 손님(요구사항): Dispatch(Action)
+			// 손님요구(요구사항): Dispatch(Action)
 			dispatch({ type: "ADD_ORDER", ...newOrder });
 			// 주문을 추가한 후에는 입력값 초기화
 			setNewOrder({ drink: "", size: "", price: "" });
@@ -26,7 +26,7 @@ const CafeOrderSystem = () => {
 
 	// 주문 취소 함수
 	const cancelOrder = (id) => {
-		// 손님(요구사항): Dispatch(Action)
+		// 손님요구(요구사항): Dispatch(Action)
 		dispatch({ type: "CANCEL_ORDER", id });
 	};
 
